@@ -1,1 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Experience | Bhima Tech IT Support</title>
+    <meta name="description" content="Professional experience of Gangadhar - Technical Support Engineer with expertise in Microsoft 365, Endpoint Management, IT Security, and Enterprise IT Support.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            line-height: 1.7;
+            background: #ffffff;
+        }
 
+        /* NAV */
+        nav {
+            background: #0f172a;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+        }
+        .logo span {
+            color: #06b6d4;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            align-items: center;
+        }
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #06b6d4;
+        }
+        .nav-links .btn-back {
+            background: #06b6d4;
+            color: #0f172a;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-weight: 700;
+        }
+        .nav-links .btn-back:hover {
+            background: #22d3ee;
+            color: #0f172a;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1a56db 100%);
+            padding: 140px 20px 80px;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(6, 182, 212, 0.15);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            color: #06b6d4;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .hero h1 {
+            color: #ffffff;
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        .hero h1 span {
+            color: #06b6d4;
+        }
+        .hero p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* TIMELINE */
+        .timeline-section {
+            padding: 80px 20px;
+            background: #f8fafc;
+        }
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #1a56db, #06b6d4);
+        }
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 45%;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 45%;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #06b6d4;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            box-shadow: 0 0 0 3px #06b6d4;
+        }
+        .timeline-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 4px solid #1a56db;
+            width: 100%;
+        }
+        .timeline-card .year {
+            font-size: 0.8rem;
+            color: #1a56db;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .timeline-card h3 {
+            color: #0f172a;
+            font-size: 1.15rem;
+            margin: 5px 0;
+        }
+        .timeline-card .role {
+            color: #64748b;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 80px 20px;
+        }
+        .section-dark {
+            background: #f8fafc;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-header h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+        .section-header p {
+            color: #64748b;
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .section-header .line {
+            width: 60px;
+            height: 4px;
+            background: #06b6d4;
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        /* EXPERIENCE CARD */
+        .exp-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        .exp-header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            padding: 35px 40px;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .exp-header-left h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .exp-header-left .subtitle {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+        .exp-header-right {
+            text-align: right;
+        }
+        .exp-header-right .duration {
+            background: rgba(6, 182, 212, 0.2);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            color: #06b6d4;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .exp-header-right .location {
+            color: #94a3b8;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+        .exp-body {
+            padding: 35px 40px;
+        }
+        .exp-overview {
+            background: #eff6ff;
+            border-left: 4px solid #1a56db;
+            padding: 20px 25px;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 30px;
+        }
+        .exp-overview p {
+            color: #334155;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* RESPONSIBILITIES */
+        .resp-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .resp-item {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s;
+        }
+        .resp-item:hover {
+            border-color: #06b6d4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(6, 182, 212, 0.1);
+        }
+        .resp-item .icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #eff6ff, #ecfeff);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        .resp-item .icon i {
+            color: #1a56db;
+            font-size: 1.1rem;
+        }
+        .resp-item h4 {
+            color: #0f172a;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .resp-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        .resp-item ul li {
+            color: #64748b;
+            font-size: 0.85rem;
+            padding: 3px 0;
+            padding-left: 18px;
+            position: relative;
+        }
+        .resp-item ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #06b6d4;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+
+        /* TOOLS TABLE */
+        .tools-section {
+            margin-bottom: 30px;
+        }
+        .tools-section h4 {
+            color: #0f172a;
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .tools-section h4 i {
+            color: #1a56db;
+        }
+        .tools-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tool-tag {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #1a56db;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+
+        /* HIGHLIGHTS */
+        .highlights-box {
+            background: linear-gradient(135deg, #064e3b, #065f46);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+        .highlights-box h4 {
+            color: #ffffff;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .highlights-box h4 i {
+            color: #34d399;
+        }
+        .highlights-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .highlights-box ul li {
+            color: #a7f3d0;
+            font-size: 0.9rem;
+            padding: 4px 0;
+            padding-left: 22px;
+            position: relative;
+        }
+        .highlights-box ul li::before {
+            content: '★';
+            position: absolute;
+            left: 0;
+            color: #34d399;
+            font-size: 0.85rem;
+        }
+
+        /* CAREER PROGRESSION */
+        .progression-section {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            padding: 80px 20px;
+        }
+        .progression-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .progression-section > p {
+            color: #94a3b8;
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 1.05rem;
+        }
+        .progression-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .progress-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+        .progress-card .step {
+            background: #06b6d4;
+            color: #0f172a;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: 800;
+            font-size: 0.95rem;
+        }
+        .progress-card h4 {
+            color: #ffffff;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+        .progress-card p {
+            color: #94a3b8;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        /* SKILLS SUMMARY */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .skill-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .skill-card:hover {
+            border-color: #06b6d4;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+        .skill-card i {
+            font-size: 2rem;
+            color: #06b6d4;
+            margin-bottom: 15px;
+        }
+        .skill-card h4 {
+            color: #0f172a;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        .skill-card p {
+            color: #64748b;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        /* DISCLAIMER */
+        .disclaimer {
+            background: #fffbeb;
+            border: 1px solid #fcd34d;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+        .disclaimer h4 {
+            color: #92400e;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .disclaimer p {
+            color: #92400e;
+            font-size: 0.85rem;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #020617;
+            padding: 30px 20px;
+            text-align: center;
+            color: #475569;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #06b6d4;
+            text-decoration: none;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 15px;
+            }
+            .nav-links a:not(.btn-back) {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .timeline::before {
+                left: 20px;
+            }
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                padding-left: 55px;
+                padding-right: 0;
+                justify-content: flex-start;
+            }
+            .timeline-item::before {
+                left: 20px;
+            }
+            .exp-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .exp-header-right {
+                text-align: center;
+            }
+            .resp-grid {
+                grid-template-columns: 1fr;
+            }
+            .progression-grid {
+                grid-template-columns: 1fr;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .exp-body {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">BHIMA<span>TECH</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Back to Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+            <div class="hero-badge">💼 CAREER JOURNEY</div>
+            <h1>Professional <span>Experience</span></h1>
+            <p>Over 3+ years of enterprise IT support, endpoint management, and cloud administration experience across leading organizations.</p>
+        </div>
+    </section>
+
+    <!-- CAREER TIMELINE -->
+    <section class="timeline-section">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="year">2026 – Present</div>
+                    <h3>Alliance Pro IT</h3>
+                    <div class="role">Senior Technical Support Engineer</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="year">2024 – 2025</div>
+                    <h3>Kaizen IT Services Pvt. Ltd.</h3>
+                    <div class="role">System Administrator | Desktop Support</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="year">2022 – 2024</div>
+                    <h3>TeamLease – Vodafone Idea</h3>
+                    <div class="role">IT Support Engineer (L1.5)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE 1: ALLIANCE PRO IT ===== -->
+    <section class="section" id="alliance">
+        <div class="container">
+            <div class="section-header">
+                <h2>Current Role</h2>
+                <p>Leading endpoint management, cloud administration, and IT security operations.</p>
+                <div class="line"></div>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-header-left">
+                        <h2>Alliance Pro IT</h2>
+                        <div class="subtitle">Senior Technical Support Engineer</div>
+                    </div>
+                    <div class="exp-header-right">
+                        <div class="duration">February 2026 – Present</div>
+                        <div class="location">IT Infrastructure | Endpoint Management | Security</div>
+                    </div>
+                </div>
+                <div class="exp-body">
+
+                    <div class="exp-overview">
+                        <p>Currently handling IT support and administration activities across endpoint management, Microsoft 365 administration, IT security monitoring, and enterprise IT operations. Managing endpoint devices, monitoring system health, supporting patch management, administering Microsoft 365 users and licenses, and assisting with security and compliance operations.</p>
+                    </div>
+
+                    <div class="resp-grid">
+                        <div class="resp-item">
+                            <div class="icon"><i class="fab fa-microsoft"></i></div>
+                            <h4>Microsoft 365 Administration</h4>
+                            <ul>
+                                <li>Create, modify, manage M365 user accounts</li>
+                                <li>Assign and remove licenses</li>
+                                <li>Employee onboarding and offboarding</li>
+                                <li>License usage and reporting</li>
+                                <li>Microsoft 365 troubleshooting</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                            <h4>Endpoint Management</h4>
+                            <ul>
+                                <li>ManageEngine Endpoint Central administration</li>
+                                <li>Device inventory and health monitoring</li>
+                                <li>Software deployment and uninstallation</li>
+                                <li>Windows patch management</li>
+                                <li>USB and application-control policies</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-chart-line"></i></div>
+                            <h4>Log Monitoring – Log360</h4>
+                            <ul>
+                                <li>Centralized log collection and review</li>
+                                <li>Windows event-log analysis</li>
+                                <li>Failed-login monitoring</li>
+                                <li>Alert investigation support</li>
+                                <li>Log storage and trend analysis</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-shield-halved"></i></div>
+                            <h4>IT Security & Compliance</h4>
+                            <ul>
+                                <li>Endpoint security monitoring</li>
+                                <li>BitLocker and device encryption</li>
+                                <li>DLP and endpoint protection</li>
+                                <li>Security alert review</li>
+                                <li>Compliance reporting</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-boxes-stacked"></i></div>
+                            <h4>IT Asset Management</h4>
+                            <ul>
+                                <li>Device inventory and tracking</li>
+                                <li>Laptop preparation for new employees</li>
+                                <li>Device handovers and asset updates</li>
+                                <li>Employee exit device recovery</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-headset"></i></div>
+                            <h4>IT Operations & Support</h4>
+                            <ul>
+                                <li>Windows OS troubleshooting</li>
+                                <li>Application and Office support</li>
+                                <li>Network, VPN, printer support</li>
+                                <li>Technical documentation</li>
+                                <li>Incident management</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tools-section">
+                        <h4><i class="fas fa-tools"></i> Tools & Technologies</h4>
+                        <div class="tools-tags">
+                            <div class="tool-tag">ManageEngine Endpoint Central</div>
+                            <div class="tool-tag">ManageEngine Log360</div>
+                            <div class="tool-tag">Microsoft 365</div>
+                            <div class="tool-tag">Microsoft Entra ID</div>
+                            <div class="tool-tag">Microsoft Intune</div>
+                            <div class="tool-tag">Exchange Online</div>
+                            <div class="tool-tag">Windows 10 / 11</div>
+                            <div class="tool-tag">BitLocker</div>
+                            <div class="tool-tag">EDR</div>
+                            <div class="tool-tag">DLP</div>
+                            <div class="tool-tag">PowerShell</div>
+                            <div class="tool-tag">Patch Management</div>
+                        </div>
+                    </div>
+
+                    <div class="highlights-box">
+                        <h4><i class="fas fa-trophy"></i> Key Highlights</h4>
+                        <ul>
+                            <li>Managing Microsoft 365 user creation and license administration</li>
+                            <li>Working with Endpoint Central for endpoint management and patching</li>
+                            <li>Monitoring endpoint agent health and software deployment</li>
+                            <li>Log360 monitoring and Windows security event analysis</li>
+                            <li>Supporting employee onboarding, laptop preparation, and IT asset management</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE 2: KAIZEN IT SERVICES ===== -->
+    <section class="section section-dark" id="kaizen">
+        <div class="container">
+            <div class="section-header">
+                <h2>System Administration</h2>
+                <p>Multi-branch IT operations and independent system administration.</p>
+                <div class="line"></div>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-header-left">
+                        <h2>Kaizen IT Services Pvt. Ltd.</h2>
+                        <div class="subtitle">Senior Desktop Support Engineer | System Administrator</div>
+                    </div>
+                    <div class="exp-header-right">
+                        <div class="duration">August 2024 – January 2025</div>
+                        <div class="location">Hyderabad, India | Multi-Branch Operations</div>
+                    </div>
+                </div>
+                <div class="exp-body">
+
+                    <div class="exp-overview">
+                        <p>Responsible for supporting IT operations across three office branches in Hyderabad. Served as a single point of contact for day-to-day IT support, assisting approximately 50–60 users per branch with desktop, software, hardware, printer, and network-related issues.</p>
+                    </div>
+
+                    <div class="resp-grid">
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-desktop"></i></div>
+                            <h4>Desktop & End-User Support</h4>
+                            <ul>
+                                <li>Technical support across 3 office branches</li>
+                                <li>Windows laptop and desktop troubleshooting</li>
+                                <li>OS and application support</li>
+                                <li>Microsoft Office and Outlook support</li>
+                                <li>Remote and on-site assistance</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-cogs"></i></div>
+                            <h4>System Administration</h4>
+                            <ul>
+                                <li>Device preparation and configuration</li>
+                                <li>Windows OS installation</li>
+                                <li>Business application setup</li>
+                                <li>System maintenance</li>
+                                <li>Independent IT operations</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-hdd"></i></div>
+                            <h4>Hardware & Software</h4>
+                            <ul>
+                                <li>Laptop and desktop hardware diagnosis</li>
+                                <li>RAM, SSD, HDD troubleshooting</li>
+                                <li>Software installation and configuration</li>
+                                <li>Hardware repair coordination</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-print"></i></div>
+                            <h4>Printer & Network Support</h4>
+                            <ul>
+                                <li>Local and network printer setup</li>
+                                <li>Printer connectivity troubleshooting</li>
+                                <li>LAN and Wi-Fi connectivity</li>
+                                <li>IP and network troubleshooting</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tools-section">
+                        <h4><i class="fas fa-tools"></i> Tools & Technologies</h4>
+                        <div class="tools-tags">
+                            <div class="tool-tag">Windows 10 / 11</div>
+                            <div class="tool-tag">Microsoft Office</div>
+                            <div class="tool-tag">Outlook</div>
+                            <div class="tool-tag">Laptops & Desktops</div>
+                            <div class="tool-tag">RAM / SSD / HDD</div>
+                            <div class="tool-tag">LAN / Wi-Fi</div>
+                            <div class="tool-tag">Network Printers</div>
+                            <div class="tool-tag">Asset Management</div>
+                        </div>
+                    </div>
+
+                    <div class="highlights-box">
+                        <h4><i class="fas fa-trophy"></i> Key Highlights</h4>
+                        <ul>
+                            <li>Supported IT operations across three Hyderabad office branches</li>
+                            <li>Assisted approximately 50–60 users per branch (~150+ users total)</li>
+                            <li>Worked as a primary IT support contact across multiple locations</li>
+                            <li>Managed device preparation and IT asset-related activities</li>
+                            <li>Developed ability to independently manage day-to-day IT operations</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE 3: TEAMLEASE – VODAFONE IDEA ===== -->
+    <section class="section" id="teamlease">
+        <div class="container">
+            <div class="section-header">
+                <h2>Enterprise IT Support</h2>
+                <p>Foundation of enterprise-level desktop and end-user support.</p>
+                <div class="line"></div>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-header-left">
+                        <h2>TeamLease – Vodafone Idea</h2>
+                        <div class="subtitle">IT Support Engineer (L1.5)</div>
+                    </div>
+                    <div class="exp-header-right">
+                        <div class="duration">August 2022 – June 2024</div>
+                        <div class="location">Enterprise IT | Incident Management | FCR</div>
+                    </div>
+                </div>
+                <div class="exp-body">
+
+                    <div class="exp-overview">
+                        <p>Provided technical assistance to end users, troubleshooted hardware and software issues, managed IT service requests, and ensured timely resolution of technical incidents. Handled approximately 30–50 support calls per day while maintaining service quality and focusing on First Call Resolution (FCR).</p>
+                    </div>
+
+                    <div class="resp-grid">
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-desktop"></i></div>
+                            <h4>Desktop & End-User Support</h4>
+                            <ul>
+                                <li>L1 and L1.5 technical support</li>
+                                <li>Hardware and software troubleshooting</li>
+                                <li>Windows OS and application support</li>
+                                <li>VIP user support</li>
+                                <li>Remote technical assistance</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-ticket"></i></div>
+                            <h4>Incident Management</h4>
+                            <ul>
+                                <li>30–50 support calls per day</li>
+                                <li>IT incidents and service requests</li>
+                                <li>First Call Resolution (FCR)</li>
+                                <li>Escalation to L2 teams</li>
+                                <li>Ticket documentation</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-network-wired"></i></div>
+                            <h4>Network Support</h4>
+                            <ul>
+                                <li>LAN and Wi-Fi troubleshooting</li>
+                                <li>VPN connectivity issues</li>
+                                <li>IP and network checks</li>
+                                <li>Infrastructure escalation</li>
+                            </ul>
+                        </div>
+                        <div class="resp-item">
+                            <div class="icon"><i class="fas fa-shield-halved"></i></div>
+                            <h4>Security & Compliance</h4>
+                            <ul>
+                                <li>Endpoint security support</li>
+                                <li>DLP and FireEye tools</li>
+                                <li>Security policy compliance</li>
+                                <li>Data backup and recovery</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tools-section">
+                        <h4><i class="fas fa-tools"></i> Tools & Technologies</h4>
+                        <div class="tools-tags">
+                            <div class="tool-tag">Windows 10 / 11</div>
+                            <div class="tool-tag">Microsoft Office</div>
+                            <div class="tool-tag">Outlook</div>
+                            <div class="tool-tag">ITSM / Ticketing</div>
+                            <div class="tool-tag">DLP</div>
+                            <div class="tool-tag">FireEye</div>
+                            <div class="tool-tag">LAN / Wi-Fi / VPN</div>
+                            <div class="tool-tag">Remote Support</div>
+                        </div>
+                    </div>
+
+                    <div class="highlights-box">
+                        <h4><i class="fas fa-trophy"></i> Key Highlights</h4>
+                        <ul>
+                            <li>Managed daily support workload of approximately 30–50 calls</li>
+                            <li>Gained experience supporting enterprise users in a structured IT environment</li>
+                            <li>Developed troubleshooting and incident-handling skills</li>
+                            <li>Worked with security and compliance-related support processes</li>
+                            <li>Improved communication, prioritization, and customer service skills</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAREER PROGRESSION -->
+    <section class="progression-section">
+        <h2>Career <span style="color:#06b6d4;">Progression</span></h2>
+        <p>From enterprise desktop support to senior IT administration and security operations.</p>
+        <div class="progression-grid">
+            <div class="progress-card">
+                <div class="step">1</div>
+                <h4>Enterprise IT Support</h4>
+                <p>Built foundation in desktop support, incident management, and enterprise IT operations at Vodafone Idea.</p>
+            </div>
+            <div class="progress-card">
+                <div class="step">2</div>
+                <h4>System Administration</h4>
+                <p>Developed independent IT operations, multi-branch support, and system administration skills.</p>
+            </div>
+            <div class="progress-card">
+                <div class="step">3</div>
+                <h4>Endpoint & Security</h4>
+                <p>Expanded into Microsoft 365 admin, endpoint management, IT security, and cloud administration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SUMMARY -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Professional Skills</h2>
+                <p>Skills developed across all roles and continuously growing.</p>
+                <div class="line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>IT Support</h4>
+                    <p>L1 / L1.5 / L2 troubleshooting, incident management, FCR, VIP support, remote assistance.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Endpoint Management</h4>
+                    <p>ManageEngine Endpoint Central, device inventory, software deployment, patch management.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-microsoft"></i>
+                    <h4>Microsoft 365</h4>
+                    <p>User administration, license management, Entra ID, Exchange Online, Teams, SharePoint.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-shield-halved"></i>
+                    <h4>IT Security</h4>
+                    <p>Endpoint security, BitLocker, DLP, EDR, device control, log monitoring, compliance support.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Log Monitoring</h4>
+                    <p>ManageEngine Log360, Windows event analysis, security alerts, storage and trend analysis.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-file-lines"></i>
+                    <h4>Documentation</h4>
+                    <p>Technical documentation, SOPs, incident records, IT asset tracking, compliance reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="disclaimer">
+                <h4><i class="fas fa-circle-info"></i> Professional Note</h4>
+                <p>This page documents individual professional experience and is intended for portfolio and skills-demonstration purposes. It does not represent an official project publication or endorsement by any organization or their clients. No confidential company information, internal configurations, customer data, production screenshots, credentials, or proprietary documentation is included. All product names and trademarks belong to their respective owners.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Bhima Tech IT Support. All rights reserved. | Founded by Gangadhar</p>
+        <p style="margin-top: 8px;">
+            <a href="index.html">Home</a> |
+            <a href="mailto:bhimatechsupport@gmail.com">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
