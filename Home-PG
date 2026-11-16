@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhima Tech IT Support</title>
+    <meta name="description" content="Professional IT Support, Endpoint Management, IT Security, Microsoft 365 and Google Workspace Administration for businesses across India.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            line-height: 1.7;
+            background: #ffffff;
+        }
+
+        /* ===== NAVIGATION ===== */
+        nav {
+            background: #0f172a;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #06b6d4;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #06b6d4;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1a56db 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 20px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(6, 182, 212, 0.15);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            color: #06b6d4;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            color: #ffffff;
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #06b6d4;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 1.15rem;
+            margin-bottom: 35px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #06b6d4;
+            color: #0f172a;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            background: #22d3ee;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid #334155;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-secondary:hover {
+            border-color: #06b6d4;
+            color: #06b6d4;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            color: #06b6d4;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .stat-label {
+            color: #64748b;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        /* ===== SECTIONS ===== */
+        .section {
+            padding: 80px 20px;
+        }
+
+        .section-dark {
+            background: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: #64748b;
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-header .line {
+            width: 60px;
+            height: 4px;
+            background: #06b6d4;
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        /* ===== ABOUT ===== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.5rem;
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #334155;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .highlight-item i {
+            color: #06b6d4;
+            font-size: 1rem;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, #1e3a8a, #06b6d4);
+            border-radius: 16px;
+            padding: 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .about-image i {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .about-image h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .about-image p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+
+        /* ===== SERVICES ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 35px 25px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: #06b6d4;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #1a56db, #06b6d4);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, #eff6ff, #ecfeff);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .service-icon i {
+            font-size: 1.4rem;
+            color: #1a56db;
+        }
+
+        .service-card h3 {
+            font-size: 1.1rem;
+            color: #0f172a;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #64748b;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* ===== SERVICE MODELS ===== */
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .model-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            border-left: 4px solid #1a56db;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .model-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .model-card h3 {
+            color: #0f172a;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .model-card h3 i {
+            color: #1a56db;
+        }
+
+        .model-card p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* ===== WHY CHOOSE US ===== */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s;
+        }
+
+        .why-card:hover {
+            border-color: #06b6d4;
+            transform: translateY(-3px);
+        }
+
+        .why-card i {
+            font-size: 2rem;
+            color: #06b6d4;
+            margin-bottom: 15px;
+        }
+
+        .why-card h4 {
+            color: #0f172a;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .why-card p {
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+
+        /* ===== TECH STACK ===== */
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .tech-tag {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #334155;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+
+        .tech-tag:hover {
+            border-color: #1a56db;
+            color: #1a56db;
+            background: #eff6ff;
+        }
+
+        .tech-tag i {
+            color: #1a56db;
+        }
+
+        /* ===== CONTACT ===== */
+        .contact-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-section > p {
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-size: 1.05rem;
+        }
+
+        .contact-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 30px;
+            min-width: 220px;
+            flex: 1;
+        }
+
+        .contact-card i {
+            font-size: 1.5rem;
+            color: #06b6d4;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h4 {
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .contact-card p, .contact-card a {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            color: #06b6d4;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #020617;
+            padding: 30px 20px;
+            text-align: center;
+            color: #475569;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #06b6d4;
+            text-decoration: none;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                gap: 25px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .models-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">BHIMA<span>TECH</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#models">Service Models</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🛡️ PROFESSIONAL IT SUPPORT</div>
+            <h1>Reliable IT. Secure Endpoints.<br><span>Smarter Support.</span></h1>
+            <p>Professional IT support, endpoint management, and cloud administration for startups and SMBs across India. Flexible plans. Real expertise.</p>
+            <div class="hero-buttons">
+                <a href="mailto:bhimatechsupport@gmail.com" class="btn-primary">
+                    <i class="fas fa-envelope"></i> Get Free IT Assessment
+                </a>
+                <a href="#services" class="btn-secondary">
+                    <i class="fas fa-arrow-down"></i> View Services
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Users Supported</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Service Areas</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">All India</div>
+                    <div class="stat-label">Remote Coverage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Bhima Tech</h2>
+                <p>Your trusted IT support partner for reliable, secure, and well-managed technology environments.</p>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>IT Support That Grows With Your Business</h3>
+                    <p>Bhima Tech IT Support is an independent IT services initiative founded by Gangadhar. We help startups and small and medium-sized businesses maintain reliable, secure, and well-managed IT environments.</p>
+                    <p>Many growing businesses use laptops, desktops, business applications, cloud platforms, and network devices but may not need a full-time in-house IT engineer. Bhima Tech provides flexible IT support and maintenance based on each organization's requirements.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i> Remote & On-site Support</div>
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i> Endpoint Management</div>
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i> Microsoft 365 Admin</div>
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i> Google Workspace</div>
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i> IT Security & Compliance</div>
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i> Patch Management</div>
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i> Log Monitoring</div>
+                        <div class="highlight-item"><i class="fas fa-check-circle"></i> Asset Management</div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3>Enterprise-Grade IT Support</h3>
+                    <p>Bringing enterprise-level IT expertise to small and medium businesses at affordable pricing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section section-dark" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive IT support covering every aspect of your technology environment.</p>
+                <div class="line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>Desktop & End-User Support</h3>
+                    <p>Windows troubleshooting, Office & Outlook support, printer setup, Wi-Fi, VPN, and new-joiner device preparation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fab fa-microsoft"></i></div>
+                    <h3>Microsoft 365 Administration</h3>
+                    <p>User management, license administration, Entra ID, Exchange Online, Teams, SharePoint, OneDrive, and Intune support.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fab fa-google"></i></div>
+                    <h3>Google Workspace Administration</h3>
+                    <p>User onboarding, Gmail, Drive, Meet, Calendar support, group management, and security configuration.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Endpoint Management</h3>
+                    <p>ManageEngine Endpoint Central administration, device monitoring, software deployment, and device control policies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shield-virus"></i></div>
+                    <h3>IT Security & Compliance</h3>
+                    <p>Endpoint security monitoring, BitLocker encryption, USB control, DLP support, and compliance documentation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-download"></i></div>
+                    <h3>Patch Management</h3>
+                    <p>Windows patch assessment, deployment, missing-patch remediation, compliance checks, and reporting.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Log Monitoring & Security</h3>
+                    <p>ManageEngine Log360 administration, event log analysis, alert monitoring, and security investigation support.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-boxes-stacked"></i></div>
+                    <h3>IT Asset Management</h3>
+                    <p>Hardware and software inventory, device tracking, joiner/leaver processes, and periodic reviews.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Network & Printer Support</h3>
+                    <p>LAN/Wi-Fi troubleshooting, IP and DNS checks, network printer setup, and VPN connectivity assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE MODELS -->
+    <section class="section" id="models">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Service Models</h2>
+                <p>Flexible engagement options designed to match your business needs and budget.</p>
+                <div class="line"></div>
+            </div>
+            <div class="models-grid">
+                <div class="model-card">
+                    <h3><i class="fas fa-wifi"></i> Remote IT Support</h3>
+                    <p>Remote troubleshooting and assistance for user, device, application, and connectivity issues from anywhere in India.</p>
+                </div>
+                <div class="model-card">
+                    <h3><i class="fas fa-calendar-check"></i> Monthly IT Maintenance</h3>
+                    <p>Planned maintenance, endpoint health checks, patch reviews, inventory updates, and regular support within an agreed scope.</p>
+                </div>
+                <div class="model-card">
+                    <h3><i class="fas fa-location-dot"></i> Scheduled On-site Support</h3>
+                    <p>On-site assistance for device setup, troubleshooting, employee onboarding, and agreed IT activities at your location.</p>
+                </div>
+                <div class="model-card">
+                    <h3><i class="fas fa-user-tie"></i> Dedicated IT Engineer</h3>
+                    <p>Dedicated support resource deployment based on your business requirements, location, working hours, and scope.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <section class="section section-dark" id="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technologies We Work With</h2>
+                <p>Hands-on experience with industry-standard tools and platforms.</p>
+                <div class="line"></div>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-tag"><i class="fab fa-windows"></i> Windows 10/11</div>
+                <div class="tech-tag"><i class="fab fa-microsoft"></i> Microsoft 365</div>
+                <div class="tech-tag"><i class="fab fa-microsoft"></i> Entra ID</div>
+                <div class="tech-tag"><i class="fab fa-microsoft"></i> Microsoft Intune</div>
+                <div class="tech-tag"><i class="fab fa-microsoft"></i> Exchange Online</div>
+                <div class="tech-tag"><i class="fab fa-microsoft"></i> Teams & SharePoint</div>
+                <div class="tech-tag"><i class="fab fa-google"></i> Google Workspace</div>
+                <div class="tech-tag"><i class="fas fa-laptop"></i> ManageEngine Endpoint Central</div>
+                <div class="tech-tag"><i class="fas fa-chart-bar"></i> ManageEngine Log360</div>
+                <div class="tech-tag"><i class="fas fa-shield-halved"></i> BitLocker & EDR</div>
+                <div class="tech-tag"><i class="fas fa-terminal"></i> PowerShell</div>
+                <div class="tech-tag"><i class="fas fa-cloud"></i> Azure Virtual Desktop</div>
+                <div class="tech-tag"><i class="fas fa-network-wired"></i> LAN / Wi-Fi / VPN</div>
+                <div class="tech-tag"><i class="fas fa-print"></i> Network Printers</div>
+                <div class="tech-tag"><i class="fas fa-ticket"></i> ITSM / Ticketing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section" id="why">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Bhima Tech?</h2>
+                <p>Practical expertise, clear communication, and flexible support tailored to your needs.</p>
+                <div class="line"></div>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>Flexible Support</h4>
+                    <p>Remote and on-site support options that adapt to your schedule and budget.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-award"></i>
+                    <h4>Real Experience</h4>
+                    <p>Enterprise IT experience with Vodafone Idea, multi-branch operations, and cloud administration.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-file-lines"></i>
+                    <h4>Clear Documentation</h4>
+                    <p>Every activity is documented with clear reports, records, and knowledge transfer.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-indian-rupee-sign"></i>
+                    <h4>Affordable Pricing</h4>
+                    <p>Enterprise-grade IT support at prices that make sense for small businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <h2>Let's Talk About Your IT Needs</h2>
+        <p>Share your organization size, number of devices, location, and support requirements.</p>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email Us</h4>
+                <a href="mailto:bhimatechsupport@gmail.com">bhimatechsupport@gmail.com</a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h4>Call Us</h4>
+                <a href="tel:+919281079129">+91 92810 79129</a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-globe"></i>
+                <h4>Coverage</h4>
+                <p>All India | Remote & On-site</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Bhima Tech IT Support. All rights reserved. | Founded by Gangadhar</p>
+        <p style="margin-top: 8px; font-size: 0.8rem;">All product names and trademarks belong to their respective owners.</p>
+    </footer>
+
+</body>
+</html>
