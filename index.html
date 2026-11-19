@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhima Tech IT Support</title>
+    <title>Bhima Tech IT Support | Enterprise Remote IT & Helpdesk Services</title>
     <meta name="description" content="Professional IT Support, Endpoint Management, IT Security, Microsoft 365 and Google Workspace Administration for businesses across India.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,18 +15,15 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             font-family: 'Inter', sans-serif;
             color: #334155;
             line-height: 1.7;
             background: #ffffff;
         }
-
         /* ===== NAVIGATION ===== */
         nav {
             background: #0f172a;
@@ -36,7 +34,6 @@
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0,0,0,0.3);
         }
-
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -45,24 +42,21 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
             color: #ffffff;
             font-size: 1.5rem;
             font-weight: 800;
             text-decoration: none;
         }
-
         .logo span {
             color: #06b6d4;
         }
-
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 25px;
+            align-items: center;
         }
-
         .nav-links a {
             color: #94a3b8;
             text-decoration: none;
@@ -70,11 +64,22 @@
             font-weight: 500;
             transition: color 0.3s;
         }
-
         .nav-links a:hover {
             color: #06b6d4;
         }
-
+        .nav-ticket-btn {
+            background: #06b6d4;
+            color: #0f172a !important;
+            padding: 7px 16px;
+            border-radius: 6px;
+            font-weight: 700 !important;
+            transition: all 0.3s;
+        }
+        .nav-ticket-btn:hover {
+            background: #22d3ee;
+            color: #0f172a !important;
+            transform: translateY(-2px);
+        }
         /* ===== HERO SECTION ===== */
         .hero {
             background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1a56db 100%);
@@ -83,11 +88,10 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 120px 20px 80px;
+            padding: 130px 20px 80px;
             position: relative;
             overflow: hidden;
         }
-
         .hero::before {
             content: '';
             position: absolute;
@@ -97,13 +101,11 @@
             bottom: 0;
             background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
-
         .hero-content {
             position: relative;
             z-index: 1;
             max-width: 800px;
         }
-
         .hero-badge {
             display: inline-block;
             background: rgba(6, 182, 212, 0.15);
@@ -116,7 +118,6 @@
             margin-bottom: 25px;
             letter-spacing: 1px;
         }
-
         .hero h1 {
             color: #ffffff;
             font-size: 3rem;
@@ -124,11 +125,9 @@
             line-height: 1.2;
             margin-bottom: 20px;
         }
-
         .hero h1 span {
             color: #06b6d4;
         }
-
         .hero p {
             color: #94a3b8;
             font-size: 1.15rem;
@@ -137,14 +136,12 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         .hero-buttons {
             display: flex;
             gap: 15px;
             justify-content: center;
             flex-wrap: wrap;
         }
-
         .btn-primary {
             background: #06b6d4;
             color: #0f172a;
@@ -158,13 +155,11 @@
             align-items: center;
             gap: 8px;
         }
-
         .btn-primary:hover {
             background: #22d3ee;
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
         }
-
         .btn-secondary {
             background: transparent;
             color: #ffffff;
@@ -179,12 +174,10 @@
             align-items: center;
             gap: 8px;
         }
-
         .btn-secondary:hover {
             border-color: #06b6d4;
             color: #06b6d4;
         }
-
         .hero-stats {
             display: flex;
             justify-content: center;
@@ -192,56 +185,46 @@
             margin-top: 60px;
             flex-wrap: wrap;
         }
-
         .stat {
             text-align: center;
         }
-
         .stat-number {
             color: #06b6d4;
             font-size: 2rem;
             font-weight: 800;
         }
-
         .stat-label {
             color: #64748b;
             font-size: 0.85rem;
             margin-top: 5px;
         }
-
         /* ===== SECTIONS ===== */
         .section {
             padding: 80px 20px;
         }
-
         .section-dark {
             background: #f8fafc;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .section-header {
             text-align: center;
             margin-bottom: 60px;
         }
-
         .section-header h2 {
             font-size: 2.2rem;
             font-weight: 800;
             color: #0f172a;
             margin-bottom: 15px;
         }
-
         .section-header p {
             color: #64748b;
             font-size: 1.05rem;
             max-width: 600px;
             margin: 0 auto;
         }
-
         .section-header .line {
             width: 60px;
             height: 4px;
@@ -249,7 +232,6 @@
             margin: 15px auto 0;
             border-radius: 2px;
         }
-
         /* ===== ABOUT ===== */
         .about-grid {
             display: grid;
@@ -257,25 +239,21 @@
             gap: 60px;
             align-items: center;
         }
-
         .about-text h3 {
             font-size: 1.5rem;
             color: #0f172a;
             margin-bottom: 15px;
         }
-
         .about-text p {
             color: #64748b;
             margin-bottom: 15px;
         }
-
         .about-highlights {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
             margin-top: 25px;
         }
-
         .highlight-item {
             display: flex;
             align-items: center;
@@ -284,12 +262,10 @@
             font-weight: 500;
             font-size: 0.9rem;
         }
-
         .highlight-item i {
             color: #06b6d4;
             font-size: 1rem;
         }
-
         .about-image {
             background: linear-gradient(135deg, #1e3a8a, #06b6d4);
             border-radius: 16px;
@@ -297,30 +273,25 @@
             color: white;
             text-align: center;
         }
-
         .about-image i {
             font-size: 5rem;
             margin-bottom: 20px;
             opacity: 0.9;
         }
-
         .about-image h3 {
             font-size: 1.3rem;
             margin-bottom: 10px;
         }
-
         .about-image p {
             opacity: 0.8;
             font-size: 0.95rem;
         }
-
         /* ===== SERVICES ===== */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
-
         .service-card {
             background: #ffffff;
             border: 1px solid #e2e8f0;
@@ -330,13 +301,11 @@
             position: relative;
             overflow: hidden;
         }
-
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.08);
             border-color: #06b6d4;
         }
-
         .service-card::before {
             content: '';
             position: absolute;
@@ -348,11 +317,9 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
-
         .service-card:hover::before {
             opacity: 1;
         }
-
         .service-icon {
             width: 55px;
             height: 55px;
@@ -363,32 +330,27 @@
             justify-content: center;
             margin-bottom: 20px;
         }
-
         .service-icon i {
             font-size: 1.4rem;
             color: #1a56db;
         }
-
         .service-card h3 {
             font-size: 1.1rem;
             color: #0f172a;
             margin-bottom: 10px;
             font-weight: 700;
         }
-
         .service-card p {
             color: #64748b;
             font-size: 0.9rem;
             line-height: 1.6;
         }
-
         /* ===== SERVICE MODELS ===== */
         .models-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
         }
-
         .model-card {
             background: #ffffff;
             border-radius: 12px;
@@ -397,11 +359,9 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             transition: all 0.3s;
         }
-
         .model-card:hover {
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-
         .model-card h3 {
             color: #0f172a;
             font-size: 1.1rem;
@@ -410,56 +370,14 @@
             align-items: center;
             gap: 10px;
         }
-
         .model-card h3 i {
             color: #1a56db;
         }
-
         .model-card p {
             color: #64748b;
             font-size: 0.9rem;
         }
-
-        /* ===== WHY CHOOSE US ===== */
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-        }
-
-        .why-card {
-            text-align: center;
-            padding: 30px 20px;
-            background: #ffffff;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s;
-        }
-
-        .why-card:hover {
-            border-color: #06b6d4;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-        }
-
-        .why-card i {
-            font-size: 2rem;
-            color: #06b6d4;
-            margin-bottom: 15px;
-        }
-
-        .why-card h4 {
-            color: #0f172a;
-            font-size: 1rem;
-            margin-bottom: 8px;
-        }
-
-        .why-card p {
-            color: #64748b;
-            font-size: 0.85rem;
-        }
-
-        /* ===== TECH STACK ===== */
+        /* ===== TECHNOLOGIES ===== */
         .tech-grid {
             display: flex;
             flex-wrap: wrap;
@@ -479,15 +397,105 @@
             gap: 8px;
             transition: all 0.3s;
         }
-
         .tech-tag:hover {
             border-color: #1a56db;
             color: #1a56db;
             background: #eff6ff;
         }
-
         .tech-tag i {
             color: #1a56db;
+        }
+        /* ===== WHY CHOOSE US ===== */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+        .why-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s;
+        }
+        .why-card:hover {
+            border-color: #06b6d4;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        .why-card i {
+            font-size: 2rem;
+            color: #06b6d4;
+            margin-bottom: 15px;
+        }
+        .why-card h4 {
+            color: #0f172a;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .why-card p {
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+
+        /* ===== TICKET PORTAL STYLING ===== */
+        .ticket-portal-wrapper {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            border: 1px solid #e2e8f0;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 6px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-family: inherit;
+            color: #0f172a;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #06b6d4;
+            box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.15);
+        }
+        .btn-submit-ticket {
+            background: linear-gradient(135deg, #0284c7, #06b6d4);
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-submit-ticket:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
         }
 
         /* ===== CONTACT ===== */
@@ -496,19 +504,16 @@
             padding: 80px 20px;
             text-align: center;
         }
-
         .contact-section h2 {
             color: #ffffff;
             font-size: 2.2rem;
             margin-bottom: 15px;
         }
-
         .contact-section > p {
             color: #94a3b8;
             margin-bottom: 40px;
             font-size: 1.05rem;
         }
-
         .contact-cards {
             display: flex;
             justify-content: center;
@@ -517,7 +522,6 @@
             max-width: 800px;
             margin: 0 auto;
         }
-
         .contact-card {
             background: rgba(255,255,255,0.05);
             border: 1px solid rgba(255,255,255,0.1);
@@ -526,29 +530,24 @@
             min-width: 220px;
             flex: 1;
         }
-
         .contact-card i {
             font-size: 1.5rem;
             color: #06b6d4;
             margin-bottom: 15px;
         }
-
         .contact-card h4 {
             color: #ffffff;
             margin-bottom: 8px;
             font-size: 1rem;
         }
-
         .contact-card p, .contact-card a {
             color: #94a3b8;
             font-size: 0.9rem;
             text-decoration: none;
         }
-
         .contact-card a:hover {
             color: #06b6d4;
         }
-
         /* ===== FOOTER ===== */
         footer {
             background: #020617;
@@ -557,42 +556,36 @@
             color: #475569;
             font-size: 0.85rem;
         }
-
         footer a {
             color: #06b6d4;
             text-decoration: none;
         }
-
         /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-
             .hero h1 {
                 font-size: 2rem;
             }
-
             .hero-stats {
                 gap: 25px;
             }
-
             .about-grid {
                 grid-template-columns: 1fr;
             }
-
             .services-grid {
                 grid-template-columns: 1fr;
             }
-
             .models-grid {
                 grid-template-columns: 1fr;
             }
-
             .why-grid {
                 grid-template-columns: 1fr 1fr;
             }
-
+            .form-row {
+                grid-template-columns: 1fr;
+            }
             .contact-cards {
                 flex-direction: column;
                 align-items: center;
@@ -612,6 +605,8 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#models">Service Models</a></li>
                 <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#why">Why Us</a></li>
+                <li><a href="#support" class="nav-ticket-btn"><i class="fas fa-ticket"></i> Submit Ticket</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -621,11 +616,11 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-badge">🛡️ PROFESSIONAL IT SUPPORT</div>
-            <h1>Reliable IT. Secure Endpoints.<br><span>Smarter Support.</span></h1>
-            <p>Professional IT support, endpoint management, and cloud administration for startups and SMBs across India. Flexible plans. Real expertise.</p>
+            <h1>Reliable IT. Secure Endpoints. <span>Smarter Support.</span></h1>
+            <p>Professional IT support, endpoint management, and cloud administration for startups and SMBs across India. Flexible plans. Real enterprise expertise.</p>
             <div class="hero-buttons">
-                <a href="mailto:helpdesk@bhimatechsupport.in" class="btn-primary">
-                    <i class="fas fa-envelope"></i> Get Free IT Assessment
+                <a href="#support" class="btn-primary">
+                    <i class="fas fa-ticket"></i> Submit Support Request
                 </a>
                 <a href="experience.html" class="btn-secondary">
                     <i class="fas fa-briefcase"></i> View Experience
@@ -641,8 +636,8 @@
                     <div class="stat-label">Users Supported</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Service Areas</div>
+                    <div class="stat-number">15 Min</div>
+                    <div class="stat-label">Response SLA</div>
                 </div>
                 <div class="stat">
                     <div class="stat-number">All India</div>
@@ -795,7 +790,7 @@
                 <div class="tech-tag"><i class="fas fa-cloud"></i> Azure Virtual Desktop</div>
                 <div class="tech-tag"><i class="fas fa-network-wired"></i> LAN / Wi-Fi / VPN</div>
                 <div class="tech-tag"><i class="fas fa-print"></i> Network Printers</div>
-                <div class="tech-tag"><i class="fas fa-ticket"></i> ITSM / Ticketing</div>
+                <div class="tech-tag"><i class="fas fa-ticket"></i> Zoho Desk Helpdesk</div>
             </div>
         </div>
     </section>
@@ -833,6 +828,111 @@
         </div>
     </section>
 
+    <!-- ==================== CLIENT HELPDESK TICKET PORTAL ==================== -->
+    <section class="section section-dark" id="support">
+        <div class="container">
+            <div class="section-header">
+                <h2>Submit an IT Support Ticket</h2>
+                <p>Log your technical issue directly into our automated helpdesk. Guaranteed 15-minute response SLA.</p>
+                <div class="line"></div>
+            </div>
+
+            <div class="ticket-portal-wrapper">
+                <!-- Zoho Desk Validation Scripts -->
+                <script src='https://static.zohocdn.com/zohodeskstatic/app/js/jqueryandencoder.ef05974972bf3bca1b87.js'></script>
+                <script>
+                    window.addEventListener('pageshow', function () {
+                        const submitButton = document.getElementById('zsSubmitButton_287667000000384001');
+                        if (submitButton) { submitButton.removeAttribute('disabled'); }
+                    });
+                    function trimBoth(str){return jQuery.trim(str);}
+                    var zsWebFormMandatoryFields = new Array("Contact Name","Email","Subject");
+                    var zsFieldsDisplayLabelArray = new Array("Last Name","Email","Subject");
+                    function zsValidateMandatoryFields(){
+                        var isError = 0;
+                        for(var index = 0; index < zsWebFormMandatoryFields.length; index++){
+                            var fieldObject = document.forms['zsWebToCase_287667000000384001'][zsWebFormMandatoryFields[index]];
+                            if(fieldObject){
+                                if(((fieldObject.value).replace(/^\s+|\s+$/g, '')).length == 0){
+                                    alert(zsFieldsDisplayLabelArray[index] +' cannot be empty');
+                                    fieldObject.focus();
+                                    return false;
+                                }else{
+                                    if(fieldObject.name == 'Email'){
+                                        if(!fieldObject.value.match(/^([\w_][\w\-_.+\'&]*)@(?=.{4,256}$)(([\w]+)([\-_]*[\w])*[\.])+[a-zA-Z]{2,22}$/)){
+                                            alert('Please enter a valid email address');
+                                            fieldObject.focus();
+                                            return false;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        document.getElementById('zsSubmitButton_287667000000384001').setAttribute('disabled', 'disabled');
+                        return true;
+                    }
+                    function zsResetWebForm(webFormId){
+                        document.forms['zsWebToCase_'+webFormId].reset();
+                        document.getElementById('zsSubmitButton_287667000000384001').removeAttribute('disabled');
+                    }
+                </script>
+
+                <!-- Zoho Desk Form -->
+                <form name='zsWebToCase_287667000000384001' id='zsWebToCase_287667000000384001' action='https://desk.zoho.in/support/WebToCase' method='POST' onSubmit='return zsValidateMandatoryFields()' enctype='multipart/form-data'>
+                    
+                    <!-- Hidden Required Parameters -->
+                    <input type='hidden' name='xnQsjsdp' value='edbsn384276662b7480b08e61667315a9ab08'/>
+                    <input type='hidden' name='xmIwtLD' value='edbsne8413290aece7fda2fec137a0a8e099e323a92c9e53100604f2fbca610cbbe11'/>
+                    <input type='hidden' name='xJdfEaS' value=''/>
+                    <input type='hidden' name='actionType' value='Q2FzZXM='/>
+                    <input type="hidden" id="property(module)" value="Cases"/>
+                    <input type="hidden" id="dependent_field_values_Cases" value="{&quot;JSON_VALUES&quot;:{},&quot;JSON_SELECT_VALUES&quot;:{},&quot;JSON_MAP_DEP_LABELS&quot;:[]}"/>
+                    <input type='hidden' name='returnURL' value='https://bhimatechsupport-del.github.io/Bhima-Tech-IT-Support---Professional-Portfolio/'/>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type='text' maxlength='120' name='First Name' placeholder="e.g. Rahul" />
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name <span style="color:#ef4444;">*</span></label>
+                            <input type='text' maxlength='120' name='Contact Name' placeholder="e.g. Sharma" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Business Email <span style="color:#ef4444;">*</span></label>
+                        <input type='text' maxlength='120' name='Email' placeholder="name@company.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Issue Subject <span style="color:#ef4444;">*</span></label>
+                        <input type='text' maxlength='255' name='Subject' placeholder="e.g. Outlook Crashing / Slow Laptop / VPN Connection Error" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description of Technical Problem</label>
+                        <textarea name='Description' maxlength='3000' rows="4" placeholder="Please provide details about the issue, any error codes, or affected software..."></textarea>
+                    </div>
+
+                    <div style="display: flex; gap: 15px; align-items: center; margin-top: 10px;">
+                        <button type='submit' id="zsSubmitButton_287667000000384001" class="btn-submit-ticket">
+                            <i class="fas fa-paper-plane"></i> Submit Ticket
+                        </button>
+                        <button type='button' onclick="zsResetWebForm('287667000000384001')" style="background: transparent; border: 1px solid #cbd5e1; color: #64748b; padding: 13px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">
+                            Reset
+                        </button>
+                    </div>
+
+                    <div style="margin-top: 20px; font-size: 0.8rem; color: #94a3b8; text-align: right;">
+                        <i class="fas fa-lock"></i> Secured & Dispatched via Bhima Tech Helpdesk
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== END HELPDESK PORTAL ==================== -->
+
     <!-- CONTACT SECTION -->
     <section class="contact-section" id="contact">
         <h2>Let's Talk About Your IT Needs</h2>
@@ -858,7 +958,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2025 Bhima Tech IT Support. All rights reserved. | Founded by Gangadhar</p>
+        <p>&copy; 2026 Bhima Tech IT Support. All rights reserved. | Founded by Gangadhar</p>
         <p style="margin-top: 8px; font-size: 0.8rem;">All product names and trademarks belong to their respective owners.</p>
     </footer>
 
